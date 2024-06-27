@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    name=""/>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="">
+  <eClassifiers xsi:type="ecore:EClass" name="Lohateny_Voalohany"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Lohateny"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Fehintsoratra"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="Balise">
+    <eLiterals name="&lt;title>&lt;/title>"/>
+    <eLiterals name="&lt;h1>&lt;/h1>" value="1"/>
+    <eLiterals name="&lt;p>&lt;/p>" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HTML">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lohateny" lowerBound="1"
+        upperBound="-1" eType="#//Lohateny" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fehintsoratra" upperBound="-1"
+        eType="#//Fehintsoratra"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lohateny_voalohany" upperBound="-1"
+        eType="#//Lohateny_Voalohany"/>
+  </eClassifiers>
+</ecore:EPackage>
