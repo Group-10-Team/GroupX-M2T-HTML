@@ -1,6 +1,8 @@
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +35,17 @@ public class Main {
         html.append("<p>").append(elements.getOrDefault("paragraphe", "")).append("</p>\n");
         html.append("</body>\n</html>");
 
-        // Afficher le HTML généré
+     // Écrire le HTML dans un fichier index.html
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("../GroupX-M2T-HTML/src/index.html"))) {
+            bw.write(html.toString());
+            System.out.println("Écriture dans le fichier index.html réussie.");
+        } catch (IOException e) {
+            System.err.println("Erreur lors de l'écriture dans le fichier index.html : " + e.getMessage());
+            e.printStackTrace();
+            return;
+        }
+
+        // Afficher le HTML généré (optionnel)
         System.out.println(html.toString());
     }
 
