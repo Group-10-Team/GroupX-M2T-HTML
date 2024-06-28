@@ -7,7 +7,7 @@ Ce travail est réalisé en collaboration avec une équipe d'étudiants passionn
 - 4695 RASAMY-ZO Kalvin
 - 5031 HERINDRAINY Victor
 - 4675 RAZAFFERSON Toky Niaina
-- 4690 RAZAFIMARAVO Vonaniaina
+- 4690 RAZAFIMAHARAVO Vonaniaina
 - 6988 SOLONANTENAINA John Aris Georgino
 - 6891 RAKOTOARIMANANA Andritina Tonny
 - 6893 RATSIMBAZAFY Kezia Fifaliana
