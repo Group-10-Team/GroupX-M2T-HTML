@@ -4,7 +4,7 @@
     <semanticResources>MetaModel.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_l-l3UDSbEe-cStrZISsXcA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mW1YMDSbEe-cStrZISsXcA" name=" class diagram" repPath="#_mWkScDSbEe-cStrZISsXcA" changeId="ba7b06ab-57d6-41f7-996b-8870b110aa96">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mW1YMDSbEe-cStrZISsXcA" name=" class diagram" repPath="#_mWkScDSbEe-cStrZISsXcA" changeId="08a6205d-c997-4d38-a1bc-6ea0716e918e">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="MetaModel.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -144,9 +144,9 @@
         </computedStyleDescriptions>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzPAUDSbEe-cStrZISsXcA" name="Lohateny_Voalohany" tooltipText="" incomingEdges="_m0Ps8zSbEe-cStrZISsXcA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Lohateny_Voalohany"/>
-      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Lohateny_Voalohany"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzPAUDSbEe-cStrZISsXcA" name="Entete" tooltipText="" incomingEdges="_m0Ps8zSbEe-cStrZISsXcA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Entete"/>
+      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Entete"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -155,9 +155,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzeQ4DSbEe-cStrZISsXcA" name="Lohateny" tooltipText="" incomingEdges="_m0MpoDSbEe-cStrZISsXcA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Lohateny"/>
-      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Lohateny"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzeQ4DSbEe-cStrZISsXcA" name="Titre" tooltipText="" incomingEdges="_m0MpoDSbEe-cStrZISsXcA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Titre"/>
+      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Titre"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -166,9 +166,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzna0DSbEe-cStrZISsXcA" name="Fehintsoratra" tooltipText="" incomingEdges="_m0PF4DSbEe-cStrZISsXcA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Fehintsoratra"/>
-      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Fehintsoratra"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mzna0DSbEe-cStrZISsXcA" name="Paragraphe" tooltipText="" incomingEdges="_m0PF4DSbEe-cStrZISsXcA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="MetaModel.ecore#//Paragraphe"/>
+      <semanticElements xmi:type="ecore:EClass" href="MetaModel.ecore#//Paragraphe"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -229,6 +229,7 @@
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m0N3wzSbEe-cStrZISsXcA" description="_m0N3wDSbEe-cStrZISsXcA" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_m0N3xTSbEe-cStrZISsXcA" showIcon="false">
           <customFeatures>labelSize</customFeatures>
+          <labelFormat>bold</labelFormat>
         </centerLabelStyle>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_m0N3xDSbEe-cStrZISsXcA" showIcon="false" labelColor="39,76,114">
           <customFeatures>labelSize</customFeatures>
