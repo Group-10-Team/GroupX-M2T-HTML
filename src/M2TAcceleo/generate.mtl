@@ -1,22 +1,28 @@
 [module generate('')]
 
 [comment encoding = UTF-8 /]
-[template public generateElement(aModel : MyLangModel)]
-[comment @main /]
+
+[template public generateElement(doc : Document)]
 [file ('index.html', false, 'UTF-8')]
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>[aModel.titre/]</title>
+    [for (e : Element | doc.elements)]
+        [if (e.oclIsKindOf(Titre))]
+            <title>[e.value/]</title>
+        [/if]
+    [/for]
 </head>
 <body>
-[for (grandTitre : GrandTitre | aModel.grandTitres)]
-    <h1>[grandTitre.value/]</h1>
-[/for]
-[for (paragraphe : Paragraphe | aModel.paragraphes)]
-    <p>[paragraphe.value/]</p>
-[/for]
+    [for (e : Element | doc.elements)]
+        [if (e.oclIsKindOf(GrandTitre))]
+            <h1>[e.value/]</h1>
+        [/if]
+        [if (e.oclIsKindOf(Paragraphe))]
+            <p>[e.value/]</p>
+        [/if]
+    [/for]
 </body>
 </html>
 [/file]
