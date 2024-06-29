@@ -4,7 +4,7 @@
     <semanticResources>MetaModel.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_l-l3UDSbEe-cStrZISsXcA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mW1YMDSbEe-cStrZISsXcA" name=" class diagram" repPath="#_mWkScDSbEe-cStrZISsXcA" changeId="08a6205d-c997-4d38-a1bc-6ea0716e918e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_mW1YMDSbEe-cStrZISsXcA" name=" class diagram" repPath="#_mWkScDSbEe-cStrZISsXcA" changeId="2b6c6ffd-6284-456c-8f70-4dc6460635aa">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="MetaModel.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -68,7 +68,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_m0iA0zSbEe-cStrZISsXcA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_m0hZxDSbEe-cStrZISsXcA" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0hZxTSbEe-cStrZISsXcA" x="795" y="273" width="153" height="163"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m0hZxTSbEe-cStrZISsXcA" x="780" y="290" width="153" height="163"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_m0in4DSbEe-cStrZISsXcA" type="2003" element="_mz3ScDSbEe-cStrZISsXcA">
           <children xmi:type="notation:Node" xmi:id="_m0jO8DSbEe-cStrZISsXcA" type="5007"/>
