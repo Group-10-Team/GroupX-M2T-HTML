@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated goupdix -->
+      <package
+            uri="http://www.example.org/goupdix"
+            class="goupxm2thtml.goupdix.GoupdixPackage"
+            genModel="model/goupdix.genmodel"/>
+   </extension>
+
+</plugin>

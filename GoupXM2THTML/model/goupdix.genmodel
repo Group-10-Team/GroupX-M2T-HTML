@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/GoupXM2THTML/src-gen" creationIcons="false" editDirectory="/GoupXM2THTML.edit/src-gen"
+    editorDirectory="/GoupXM2THTML.editor/src-gen" modelPluginID="GoupXM2THTML" modelName="Goupdix"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>goupdix.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Goupdix" basePackage="goupxm2thtml" disposableProviderFactory="true"
+      ecorePackage="goupdix.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="goupdix.ecore#//Balise_Type">
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/Titre"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/H1"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/H2"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/H3"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/H4"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/P"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/span"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Balise_Type/div"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="goupdix.ecore#//Attr_Type">
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Attr_Type/class"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Attr_Type/id"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Attr_Type/src"/>
+      <genEnumLiterals ecoreEnumLiteral="goupdix.ecore#//Attr_Type/href"/>
+    </genEnums>
+    <genClasses ecoreClass="goupdix.ecore#//HTML">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference goupdix.ecore#//HTML/balise"/>
+    </genClasses>
+    <genClasses ecoreClass="goupdix.ecore#//Attribut">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute goupdix.ecore#//Attribut/nom_attr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute goupdix.ecore#//Attribut/contenu"/>
+    </genClasses>
+    <genClasses ecoreClass="goupdix.ecore#//Balise">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute goupdix.ecore#//Balise/nom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference goupdix.ecore#//Balise/balise"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference goupdix.ecore#//Balise/attribut"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
