@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.xtext.ovyhtml.mydsl
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.ovyhtml.mydsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.ovyhtml.mydsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: GoupXM2THTML,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.35.0",
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: org.xtext.ovyhtml.mydsl,
+ org.xtext.ovyhtml.mydsl.formatting2,
+ org.xtext.ovyhtml.mydsl.serializer,
+ org.xtext.ovyhtml.mydsl.parser.antlr.internal,
+ org.xtext.ovyhtml.mydsl.validation,
+ org.xtext.ovyhtml.mydsl.scoping,
+ org.xtext.ovyhtml.mydsl.parser.antlr,
+ org.xtext.ovyhtml.mydsl.services,
+ org.xtext.ovyhtml.mydsl.generator
+Import-Package: org.apache.log4j
