@@ -2,9 +2,9 @@
 [module generate('http://www.example.org/goupdix')]
 
 
-[template public generateElement(aHTML : HTML)]
+[template public generateElement(HTML : HTML)]
 [comment @main/]
-[file (aHTML.name, false, 'UTF-8')]
+[file ('index.html', false, 'UTF-8')]
 
 [/file]
 [/template]

@@ -22,7 +22,10 @@ import org.eclipse.emf.common.util.BasicMonitor;
 import org.eclipse.emf.common.util.Monitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+
+import goupxm2thtml.goupdix.GoupdixPackage;
 
 /**
  * Entry point of the 'Generate' generation module.
@@ -340,6 +343,7 @@ public class Generate extends AbstractAcceleoGenerator {
     @Override
     public void registerPackages(ResourceSet resourceSet) {
         super.registerPackages(resourceSet);
+        EPackage.Registry.INSTANCE.put(GoupdixPackage.eNS_URI, GoupdixPackage.eINSTANCE);
         
         /*
          * If you want to change the content of this method, do NOT forget to change the "@generated"
