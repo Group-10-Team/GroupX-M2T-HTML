@@ -4,6 +4,7 @@
     <semanticResources>groupXM2THTML.ecore</semanticResources>
     <semanticResources>groupXM2THTML.genmodel</semanticResources>
     <semanticResources>BaliseModel.xmi</semanticResources>
+    <semanticResources>AttributModel.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_fPxyYDkvEe-Ctd7a7cQfLQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fQKM4DkvEe-Ctd7a7cQfLQ" name="groupXM2THTML" repPath="#_fQHJkDkvEe-Ctd7a7cQfLQ" changeId="1720171619055">

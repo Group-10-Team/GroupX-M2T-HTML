@@ -1,0 +1,10 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.example.org/groupXM2THTML')]
+
+
+[template public generateElement(anAttr_Type : Attr_Type)]
+[comment @main/]
+[file (anAttr_Type.name, false, 'UTF-8')]
+
+[/file]
+[/template]
