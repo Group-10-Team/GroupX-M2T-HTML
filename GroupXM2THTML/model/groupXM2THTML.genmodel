@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/GroupXM2THTML/src-gen" creationIcons="false" editDirectory="/GroupXM2THTML.edit/src-gen"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/GroupXM2THTML/src-gen" creationIcons="false" editDirectory="/GroupXM2THTML.edit/src-gen"
     editorDirectory="/GroupXM2THTML.editor/src-gen" modelPluginID="GroupXM2THTML"
     modelName="GroupXM2THTML" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
     copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>groupXM2THTML.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="GroupXM2THTML" disposableProviderFactory="true" ecorePackage="groupXM2THTML.ecore#/"/>
+  <genPackages prefix="GroupXM2THTML" disposableProviderFactory="true" ecorePackage="groupXM2THTML.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="groupXM2THTML.ecore#//Balise_type">
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/Titre"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/H1"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/H2"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/H3"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/H4"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/p"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/span"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Balise_type/div"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="groupXM2THTML.ecore#//Attr_Type">
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Attr_Type/class"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Attr_Type/id"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Attr_Type/src"/>
+      <genEnumLiterals ecoreEnumLiteral="groupXM2THTML.ecore#//Attr_Type/href"/>
+    </genEnums>
+    <genClasses ecoreClass="groupXM2THTML.ecore#//HTML">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference groupXM2THTML.ecore#//HTML/balise"/>
+    </genClasses>
+    <genClasses ecoreClass="groupXM2THTML.ecore#//Balise">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute groupXM2THTML.ecore#//Balise/nom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference groupXM2THTML.ecore#//Balise/balise"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference groupXM2THTML.ecore#//Balise/attribut"/>
+    </genClasses>
+    <genClasses ecoreClass="groupXM2THTML.ecore#//Attribut">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute groupXM2THTML.ecore#//Attribut/nom_attr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute groupXM2THTML.ecore#//Attribut/contenu"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>
