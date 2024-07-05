@@ -3,6 +3,7 @@
   <viewpoint:DAnalysis uid="_fO6PsDkvEe-Ctd7a7cQfLQ" selectedViews="_fPxyYDkvEe-Ctd7a7cQfLQ _uj9yMDqwEe-RzdSvKf_f9A _uj9yMTqwEe-RzdSvKf_f9A _uou9cDqwEe-RzdSvKf_f9A" version="15.1.0.202211301600">
     <semanticResources>groupXM2THTML.ecore</semanticResources>
     <semanticResources>groupXM2THTML.genmodel</semanticResources>
+    <semanticResources>BaliseModel.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_fPxyYDkvEe-Ctd7a7cQfLQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fQKM4DkvEe-Ctd7a7cQfLQ" name="groupXM2THTML" repPath="#_fQHJkDkvEe-Ctd7a7cQfLQ" changeId="1720171619055">
