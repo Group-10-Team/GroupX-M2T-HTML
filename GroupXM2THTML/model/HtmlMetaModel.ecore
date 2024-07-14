@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="HtmlMetaModel" nsURI="MyMetaModel" nsPrefix="HTMLMM">
+  <eClassifiers xsi:type="ecore:EClass" name="HTML">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="balise" lowerBound="1"
+        upperBound="-1" eType="#//Balise" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Balise">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribut" upperBound="-1"
+        eType="#//Attribut" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="balise" upperBound="-1"
+        eType="#//Balise" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" upperBound="-1" eType="#//Balise_Type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Balise_Type">
+    <eLiterals name="Titre"/>
+    <eLiterals name="H1" value="1"/>
+    <eLiterals name="H2" value="2"/>
+    <eLiterals name="H3" value="3"/>
+    <eLiterals name="H4" value="4"/>
+    <eLiterals name="P" value="5"/>
+    <eLiterals name="span" value="6"/>
+    <eLiterals name="div" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Attr_Type">
+    <eLiterals name="class"/>
+    <eLiterals name="id" value="1"/>
+    <eLiterals name="src" value="2"/>
+    <eLiterals name="href" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribut">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom_attr" upperBound="-1"
+        eType="#//Attr_Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="contenu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
